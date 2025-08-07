@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon uno</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-pokemon-1.css">
+</head>
+<body>
+    
+    <nav class="navigation">
+        <ul>
+            <li><a href="menu.html">Home</a></li>
+            <li class="pokemon-btn"><a href="pokemon-1.html">Galvantula</a></li>
+            <li class="pokemon-btn"><a href="pokemon-2.html">Gholdengo</a></li>
+            <li class="pokemon-btn"><a href="pokemon-3.html">Popplio</a></li>
+        </ul>
+    </nav>
+
+    <div class="pokemon-card" id="pokemonCard">
+            
+
+
+
+        <div class="card-header">
+            <h1 class="pokemon-name" id="pokemonName">Cargando...</h1>
+            <div class="pokemon-id" id="pokemonId">#000</div>
+        </div>
+        
+        <div class="card-body">
+            <div class="pokemon-image-container">
+                <img class="pokemon-image" id="pokemonImage" src="" alt="Galvantula">
+                <div class="pokemon-types" id="pokemonTypes"></div>
+            </div>
+                
+                <div class="pokemon-info">
+                    <div class="info-section">
+                        <div class="chat">
+                            Conoce a Garvantula
+                        </div>
+                    </div>
+
+                <div class="info-section">
+                    <h3>Estadísticas Base</h3>
+                    <div class="stats-container" id="galvantulaStats"></div>
+                </div>
+                
+                <div class="info-section">
+                    <h3>Habilidades</h3>
+                    <div class="abilities-container" id="Abilities"></div>
+                </div>
+                
+                <div class="info-section">
+                    <h3>Características</h3>
+                    <div class="characteristics">
+                        <div class="char-item">
+                            <span class="label">Altura:</span>
+                            <span class="value" id="GarvantulaHeight">-</span>
+                        </div>
+                        <div class="char-item">
+                            <span class="label">Peso:</span>
+                            <span class="value" id="GarvantulaWeight">-</span>
+                        </div>
+                        <div class="char-item">
+                            <span class="label">Experiencia:</span>
+                            <span class="value" id="GarvantulaExperience">-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="interacciones.js"></script>
+        
+    
+</body>
+</html>
