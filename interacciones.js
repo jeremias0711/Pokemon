@@ -105,14 +105,14 @@ function displayPokemonData(pokemon) {
 function getPokemonForPage() {
     const currentPage = window.location.pathname.split('/').pop();
     switch(currentPage) {
-        case 'pokemon-uno.html':
-            return 'pikachu';
-        case 'pokemon-dos.html':
-            return 'charizard';
-        case 'pokemon-tres.html':
-            return 'blastoise';
+        case 'pokemon-1.html':
+            return 'Galvantula';
+        case 'pokemon-2.html':
+            return 'Gholdengo';
+        case 'pokemon-3.html':
+            return 'Popplio';
         default:
-            return 'pikachu';
+            return 'Galvantula';
     }
 }
 
@@ -121,4 +121,5 @@ document.addEventListener('DOMContentLoaded', async function() {
     const pokemonName = getPokemonForPage();
     const pokemonData = await fetchPokemonData(pokemonName);
     displayPokemonData(pokemonData);
+
 });
